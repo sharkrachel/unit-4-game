@@ -28,7 +28,7 @@ body {
 .random-number {
     background-color: #9be3f9;
     color: #fff;
-    font-size: 16px;
+    font-size: 48px;
     margin-left: 40px;
     padding: 20px;
     padding-right: 0px;
@@ -53,37 +53,40 @@ body {
     border-left: 1px solid white;
 }
 
-.pink {
-    padding: 5px;
-    padding-left: 0px;
-    padding-top: 85px;
-    margin-left: 40px;
-    position: absolute;
+#wins {
+    background-color: #9be3f9;
+    color: #fff;
+    font-size: 16px;
 }
-.purple, .blue, .diamond {
-    height: 80px;
-    width: auto;
-    padding: 5px;
-    margin-left: 40px;
-    float: left;
+
+#losses {
+    background-color: #9be3f9;
+    color: #fff;
+    font-size: 16px;
+}
+
+.pink {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -360px;
 }
 .purple {
-    position: ablsolute;
-    padding-top: 85px;
-    margin-left: -300px;
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -275px; 
 }
 
 .blue {
-    position: ablsolute;
-    padding-top: 85px;
-    margin-left: -200px;
-    }
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -190px;
+}
 
 .diamond {
-    position: ablsolute;
-    padding-top: 85px;
-    margin-left: -100px;
-    }
+    position: absolute;
+    margin-top: 85px;
+    margin-left: -105px;
+}
 
 .scoreboard {
     position: absolute;
@@ -98,13 +101,7 @@ body {
 }
 
 #total-score {
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 220px;
     color: #FFFFFF;
     background-color: #feb9bb;
-    font-size: 16px;
-    padding-top: 40px;
-    padding-right: 270px;
-    text-align: center;
+    font-size: 48px;
 }
