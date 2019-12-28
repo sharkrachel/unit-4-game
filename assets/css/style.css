@@ -10,7 +10,7 @@ body {
   color: #FFFFFF;
   background-color: #feb9bb;
   height: 100x;
-  width: 300px;
+  width: 360px;
   margin-left: 40px;
   padding: 20px;
 }
@@ -21,7 +21,7 @@ body {
     font-size: 16px;
     margin-left: 40px;
     padding: 20px;
-    width: 300px;
+    width: 360px;
     height: auto;
 }
 
@@ -32,7 +32,7 @@ body {
     margin-left: 40px;
     padding: 20px;
     padding-right: 0px;
-    width: 150px;
+    width: 180px;
     height: 40px;
     text-align: center;
     float: left;
@@ -45,10 +45,66 @@ body {
     font-size: 16px;
     padding: 20px;
     padding-left: 0px;
-    width: 150px;
+    width: 180px;
     height: 40px;
     text-align: left;
     
     float: left;
     border-left: 1px solid white;
+}
+
+.pink {
+    padding: 5px;
+    padding-left: 0px;
+    padding-top: 85px;
+    margin-left: 40px;
+    position: absolute;
+}
+.purple, .blue, .diamond {
+    height: 80px;
+    width: auto;
+    padding: 5px;
+    margin-left: 40px;
+    float: left;
+}
+.purple {
+    position: ablsolute;
+    padding-top: 85px;
+    margin-left: -300px;
+}
+
+.blue {
+    position: ablsolute;
+    padding-top: 85px;
+    margin-left: -200px;
+    }
+
+.diamond {
+    position: ablsolute;
+    padding-top: 85px;
+    margin-left: -100px;
+    }
+
+.scoreboard {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 175px;
+    color: #FFFFFF;
+    background-color: #feb9bb;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-right: 270px;
+    text-align: center;
+}
+
+#total-score {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 220px;
+    color: #FFFFFF;
+    background-color: #feb9bb;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-right: 270px;
+    text-align: center;
 }
