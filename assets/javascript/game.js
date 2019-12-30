@@ -41,7 +41,7 @@ function randomNumGen() {
     totalScore = 0;
     $("#totalScore").text(totalScore);
     // generage random number
-    randomNumber = Math.ceil(Math.random() * 120) + 19
+    randomNumber = Math.ceil(Math.random() * 100) + 20
 
     // generate random gem numbers, but keep hidden
     pinkNumber = Math.ceil(Math.random() * 12);
@@ -62,40 +62,99 @@ randomNumGen();
 // if total-score === first random number, then you win
 // add one point to win and reset the game
 
-if (totalScore === randomNumber) {
-    win++
-    $("#wins").text(win);
-    randomNumGen();
-}
+// if (totalScore === randomNumber) {
+//     win++;
+//     $("#wins").text(win);
+//     randomNumGen();
+// }
 
 // if total-score > random number, then you lose
 // add one point to lose and reset the game
 
-if (totalScore > randomNumber) {
-    lose++
-    $("#losses").text(lose);
-    randomNumGen();
-}
+// if (totalScore > randomNumber) {
+//     lose++;
+//     $("#losses").text(lose);
+//     randomNumGen();
+// }
 
 // if total-score > random number, then you lose
 // add one point to lose and reset the game
 
-else {
     $(".pink").on("click", function () {
-        totalScore = totalScore + pinkNumber;
-        $("#total-score").text(totalScore);
+
+
+        if (totalScore === randomNumber) {
+            win++;
+            $("#wins").text(win);
+            randomNumGen();
+        }
+        if (totalScore > randomNumber) {
+            lose++;
+            $("#losses").text(lose);
+            randomNumGen(); 
+        }
+        else {
+            totalScore = totalScore + pinkNumber;
+            $("#total-score").text(totalScore);
+        }
+        
     });
     $(".purple").on("click", function () {
-        totalScore = totalScore + purpleNumber;
-        $("#total-score").text(totalScore);
+
+
+        if (totalScore === randomNumber) {
+            win++;
+            $("#wins").text(win);
+            randomNumGen();
+        }
+        if (totalScore > randomNumber) {
+            lose++;
+            $("#losses").text(lose);
+            randomNumGen(); 
+        }
+        else {
+            totalScore = totalScore + purpleNumber;
+            $("#total-score").text(totalScore);
+        }
+        
     });
     $(".blue").on("click", function () {
-        totalScore = totalScore + blueNumber;
-        $("#total-score").text(totalScore);
+
+
+        if (totalScore === randomNumber) {
+            win++;
+            $("#wins").text(win);
+            randomNumGen();
+        }
+        if (totalScore > randomNumber) {
+            lose++;
+            $("#losses").text(lose);
+            randomNumGen(); 
+        }
+        else {
+            totalScore = totalScore + blueNumber;
+            $("#total-score").text(totalScore);
+        }
+        
     });
     $(".diamond").on("click", function () {
-        totalScore = totalScore + diamondNumber;
-        $("#total-score").text(totalScore);
+
+
+        if (totalScore === randomNumber) {
+            win++;
+            $("#wins").text(win);
+            randomNumGen();
+        }
+        if (totalScore > randomNumber) {
+            lose++;
+            $("#losses").text(lose);
+            randomNumGen(); 
+        }
+        else {
+            totalScore = totalScore + diamondNumber;
+            $("#total-score").text(totalScore);
+        }
+        
     });
-}
+
 
