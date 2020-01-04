@@ -39,7 +39,7 @@ var totalScore = 0;
 
 function randomNumGen() {
     totalScore = 0;
-    $("#totalScore").text(totalScore);
+    $("#total-score").text(totalScore);
     // generage random number
     randomNumber = Math.ceil(Math.random() * 100) + 20
 
@@ -55,9 +55,93 @@ function randomNumGen() {
     $(".random-number").text(randomNumber);
 }
 
+$(document).ready(function () {
 randomNumGen();
 
 // START GAME
+
+$(".pink").on("click", function () {
+    totalScore = totalScore + pinkNumber;
+    $("#total-score").text(totalScore);
+
+    if (totalScore === randomNumber) {
+       win++;
+        $("#wins").text(win);
+        randomNumGen();
+    }
+    else if (totalScore > randomNumber) {
+        lose++;
+        $("#losses").text(lose);
+        randomNumGen();
+    }
+    else {
+     
+    }
+
+});
+$(".purple").on("click", function () {
+    totalScore = totalScore + purpleNumber;
+    $("#total-score").text(totalScore);
+
+    if (totalScore === randomNumber) {
+        win++;
+        $("#wins").text(win);
+        randomNumGen();
+    }
+    else if (totalScore > randomNumber) {
+        lose++;
+        $("#losses").text(lose);
+        randomNumGen();
+    }
+    else {
+ 
+    }
+
+});
+$(".blue").on("click", function () {
+    totalScore = totalScore + blueNumber;
+    $("#total-score").text(totalScore);
+
+    if (totalScore === randomNumber) {
+        win++;
+        $("#wins").text(win);
+        randomNumGen();
+    }
+    else if (totalScore > randomNumber) {
+        lose++;
+        totalScore = 0;
+
+    }
+
+    else {
+
+    }
+
+});
+$(".diamond").on("click", function () {
+    totalScore = totalScore + diamondNumber;
+    $("#total-score").text(totalScore);
+
+    if (totalScore === randomNumber) {
+        win++;
+        $("#wins").text(win);
+        randomNumGen();
+    }
+   else if (totalScore > randomNumber) {
+        lose++;
+        $("#losses").text(lose);
+        randomNumGen();
+    }
+    else {
+
+    }
+
+});
+
+
+
+});
+
 
 // if total-score === first random number, then you win
 // add one point to win and reset the game
@@ -80,81 +164,10 @@ randomNumGen();
 // if total-score > random number, then you lose
 // add one point to lose and reset the game
 
-    $(".pink").on("click", function () {
-
-
-        if (totalScore === randomNumber) {
-            win++;
-            $("#wins").text(win);
-            randomNumGen();
-        }
-        if (totalScore > randomNumber) {
-            lose++;
-            $("#losses").text(lose);
-            randomNumGen(); 
-        }
-        else {
-            totalScore = totalScore + pinkNumber;
-            $("#total-score").text(totalScore);
-        }
-        
-    });
-    $(".purple").on("click", function () {
-
-
-        if (totalScore === randomNumber) {
-            win++;
-            $("#wins").text(win);
-            randomNumGen();
-        }
-        if (totalScore > randomNumber) {
-            lose++;
-            $("#losses").text(lose);
-            randomNumGen(); 
-        }
-        else {
-            totalScore = totalScore + purpleNumber;
-            $("#total-score").text(totalScore);
-        }
-        
-    });
-    $(".blue").on("click", function () {
-
-
-        if (totalScore === randomNumber) {
-            win++;
-            $("#wins").text(win);
-            randomNumGen();
-        }
-        if (totalScore > randomNumber) {
-            lose++;
-            $("#losses").text(lose);
-            randomNumGen(); 
-        }
-        else {
-            totalScore = totalScore + blueNumber;
-            $("#total-score").text(totalScore);
-        }
-        
-    });
-    $(".diamond").on("click", function () {
-
-
-        if (totalScore === randomNumber) {
-            win++;
-            $("#wins").text(win);
-            randomNumGen();
-        }
-        if (totalScore > randomNumber) {
-            lose++;
-            $("#losses").text(lose);
-            randomNumGen(); 
-        }
-        else {
-            totalScore = totalScore + diamondNumber;
-            $("#total-score").text(totalScore);
-        }
-        
-    });
-
-
+// function winner() {
+//     win++;
+//     $("#wins").text(win);
+//     randomNumGen();
+//     totalScore = 0;
+//     $("#totalScore").text(totalScore);
+// }
